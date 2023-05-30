@@ -14,4 +14,5 @@ const dashboardRouter = require('./routes/dashboard')
 
 app.use('/dashboard', dashboardRouter)
 
-//app.listen(3000)
+const PORT = process.env.PORT || 3001;
+app.listen(PORT);
